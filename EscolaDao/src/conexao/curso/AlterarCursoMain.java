@@ -8,7 +8,7 @@ public class AlterarCursoMain {
         var curso = new Curso();
         var cursoDao = new CursoDao();
 
-        curso.setNome("C++");
+        curso.setNome("Java");
 
         cursoDao.alterarCurso(2L, curso);
     }

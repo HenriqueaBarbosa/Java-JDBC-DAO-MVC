@@ -8,6 +8,6 @@ public class DeletarProfessorId {
 
         var professorDao = new ProfessorDao();
 
-        professorDao.deletarProfessorId(1L);
+        professorDao.deletarProfessorId(3L);
     }
 }

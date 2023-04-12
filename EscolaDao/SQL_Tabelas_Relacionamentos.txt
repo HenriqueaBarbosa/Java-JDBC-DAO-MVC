@@ -1,0 +1,8 @@
+CREATE TABLE aluno(id SERIAL PRIMARY KEY NOT NULL, nome VARCHAR(50), idade INT, endereco VARCHAR(50));
+CREATE TABLE professor(id SERIAL PRIMARY KEY NOT NULL, nome VARCHAR(50), formacao VARCHAR(50));
+CREATE TABLE curso(id SERIAL PRIMARY KEY NOT NULL, nome VARCHAR(50));
+CREATE TABLE turma(id SERIAL PRIMARY KEY NOT NULL, turma_turma INT, curso_id BIGINT, professor_id BIGINT, aluno_id BIGINT);
+
+ALTER TABLE turma ADD CONSTRAINT fk_curso_id FOREIGN KEY(curso_id) REFERENCES curso(id);
+ALTER TABLE turma ADD CONSTRAINT fk_professor_id FOREIGN KEY(professor_id) REFERENCES professor(id);
+ALTER TABLE turma ADD CONSTRAINT fk_aluno_id FOREIGN KEY(aluno_id) REFERENCES aluno(id);

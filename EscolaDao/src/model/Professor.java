@@ -2,7 +2,7 @@ package model;
 
 import java.util.Objects;
 
-public class Professor {
+public class Professor extends Turma {
     private Long id;
     private String nome;
     private String formacao;

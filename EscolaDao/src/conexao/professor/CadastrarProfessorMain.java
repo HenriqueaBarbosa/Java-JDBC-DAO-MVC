@@ -8,7 +8,7 @@ public class CadastrarProfessorMain {
         var professor = new Professor();
         var professorDao = new ProfessorDao();
 
-        professor.setNome("Henrique");
+        professor.setNome("Marcos");
         professor.setFormacao("ADS");
 
         professorDao.cadastarProfessor(professor);

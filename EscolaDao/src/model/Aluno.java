@@ -2,7 +2,7 @@ package model;
 
 import java.util.Objects;
 
-public class Aluno {
+public class Aluno extends Turma {
     private Long id;
     private String nome;
     private Integer idade;

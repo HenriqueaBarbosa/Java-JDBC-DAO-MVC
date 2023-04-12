@@ -8,9 +8,9 @@ public class MatricularAlunoMain {
         var aluno = new Aluno();
         var alunoDao = new AlunoDao();
 
-        aluno.setNome("Henrique");
-        aluno.setIdade(25);
-        aluno.setEndereco("Rua A, 123");
+        aluno.setNome("Lucas");
+        aluno.setIdade(27);
+        aluno.setEndereco("Rua F, 1923");
 
         alunoDao.matricularAluno(aluno);
     }
