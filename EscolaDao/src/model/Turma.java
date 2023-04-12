@@ -1,6 +1,7 @@
 package model;
 
 import java.util.Objects;
+import java.util.Optional;
 
 public class Turma {
     private Long id;
@@ -56,11 +57,11 @@ public class Turma {
 
     @Override
     public String toString() {
-        return "{" +
-                "id=" + id +
-                ", aluno=" + aluno +
-                ", professor=" + professor +
-                ", curso=" + curso +
+        return "Turma{" +
+                "número=" + id +
+                ", aluno=" + Optional.ofNullable(aluno).flatMap(a -> Optional.ofNullable(a.getNome())).orElse("") +
+                ", professor=" + Optional.ofNullable(professor).flatMap(p -> Optional.ofNullable(p.getNome())).orElse("") +
+                ", curso=" + Optional.ofNullable(curso).flatMap(c -> Optional.ofNullable(c.getNome())).orElse("") +
                 '}';
     }
 
