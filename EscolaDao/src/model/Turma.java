@@ -59,10 +59,11 @@ public class Turma {
     public String toString() {
         return "Turma{" +
                 "número=" + id +
-                ", aluno=" + Optional.ofNullable(aluno).flatMap(a -> Optional.ofNullable(a.getNome())).orElse("") +
-                ", professor=" + Optional.ofNullable(professor).flatMap(p -> Optional.ofNullable(p.getNome())).orElse("") +
-                ", curso=" + Optional.ofNullable(curso).flatMap(c -> Optional.ofNullable(c.getNome())).orElse("") +
+                ", aluno=" + aluno +
+                ", professor=" + professor +
+                ", curso=" + curso +
                 '}';
     }
+
 
 }
