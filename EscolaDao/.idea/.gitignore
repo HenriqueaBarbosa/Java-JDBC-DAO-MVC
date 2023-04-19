@@ -1,0 +1,9 @@
+# Ignored files
+/shelf/
+/workspace.xml
+misc.xml
+uiDesigner.xml
+vcs.xml
+modules.xml
+out/
+EscolaDao.iml
